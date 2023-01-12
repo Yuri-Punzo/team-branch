@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f15ecd80592498840a214b170e85dfbe",
+    "content-hash": "10ef6b87da73ebb328b9d97d59e811be",
     "packages": [
         {
             "name": "brick/math",
@@ -2148,6 +2148,56 @@
                 }
             ],
             "time": "2022-12-20T19:00:15+00:00"
+        },
+        {
+            "name": "pacificdev/laravel_9_preset",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabiopacificicom/laravel-9-preset.git",
+                "reference": "5f305e5705090002a5ebe446d9ffb61b9e052082"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabiopacificicom/laravel-9-preset/zipball/5f305e5705090002a5ebe446d9ffb61b9e052082",
+                "reference": "5f305e5705090002a5ebe446d9ffb61b9e052082",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PacificDev\\Laravel9Preset\\PacificDevServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PacificDev\\Laravel9Preset\\": "src/",
+                    "PacificDev\\Laravel9Preset\\Commands\\": "src/Commands/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "fbhood",
+                    "email": "mail@fabiopacifici.com"
+                }
+            ],
+            "description": "Default preset for laravel 9 with bootstrap",
+            "keywords": [
+                "laravel",
+                "preset"
+            ],
+            "support": {
+                "issues": "https://github.com/fabiopacificicom/laravel-9-preset/issues",
+                "source": "https://github.com/fabiopacificicom/laravel-9-preset/tree/main"
+            },
+            "time": "2022-12-14T18:28:14+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -7920,7 +7970,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "pacificdev/laravel_9_preset": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
