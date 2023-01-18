@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Type;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
@@ -27,7 +29,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.products.create');
+        $types = Type::all();
+
+        return view('admin.products.create', compact('types'));
     }
 
     /**
@@ -67,7 +71,9 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        return view('admin.products.edit', compact('product'));
+        $types = Type::all();
+
+        return view('admin.products.edit', compact('product', 'types'));
     }
 
     /**
