@@ -13,7 +13,7 @@ class UpdateProductRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,16 @@ class UpdateProductRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => 'required|unique:products,title|max:100',
+            'description' => 'nullable|max:300',
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'title.required' => 'Campo obbligatorio',
+            'title.max' => 'Il titolo deve essere di massimo :max caratteri',
+            'description.max' => 'La descrizione deve essere di massimo :max caratteri',
         ];
     }
 }
