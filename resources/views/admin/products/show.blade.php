@@ -8,6 +8,7 @@
         <div class="details">
             <h1>{{$product->title}}</h1>
             <p>{{$product->description}}</p>
+            <span>{{$product->type ? $product->type->name : 'Null'}}</span>
         </div>
     </div>
 </div>
