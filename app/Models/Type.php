@@ -24,7 +24,7 @@ class Type extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function products(): HasMany
+    public function product(): HasMany
     {
         return $this->hasMany(Product::class);
     }
