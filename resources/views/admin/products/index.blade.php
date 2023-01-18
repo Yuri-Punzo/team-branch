@@ -12,7 +12,7 @@
                 </div>
             </div>
 
-            @include('partials.message')
+            <!-- include('partials.message') -->
 
             <div class="table-responsive-md">
                 <table class="table table-striped table-hover table-borderless table-primary align-middle">
