@@ -22,7 +22,6 @@ class ProductSeeder extends Seeder
             $product->title = $faker->sentence(3);
             $product->slug = Str::slug($product->title, '-');
             $product->description = $faker->text(210);
-            //$new_project->cover_image = $faker->image('storage/app/public/placeholders', 600, 300, 'Product', false, true);
             $product->save();
         }
     }
