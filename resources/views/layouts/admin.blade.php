@@ -21,13 +21,13 @@
 
 <body>
     <div id="app">
-
-
         @include("partials.header")
 
-        <main class="">
-            @yield('content')
-        </main>
+        @yield('content')
+
+        <a class="ms-5" href="{{route('admin.products.index')}}">Products</a>
+
+
     </div>
 </body>
 
