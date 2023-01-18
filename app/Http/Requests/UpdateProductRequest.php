@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class UpdateProductRequest extends FormRequest
 {
@@ -24,8 +25,15 @@ class UpdateProductRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|unique:products,title|max:100',
-            'description' => 'nullable|max:300',
+            'title' => [
+                'required',
+                Rule::unique('products')->ignore($this->product->id),
+                'min:5',
+                'max:100'
+            ],
+            'slug' => 'max:255',
+            'description' => 'nullable',
+            'type_id' => ['nullable', 'exists:types,id']
         ];
     }
     public function messages()

@@ -19,11 +19,6 @@ class Type extends Model
         return $type_slug;
     }
 
-    /**
-     * Get all of the products for the Type
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
     public function product(): HasMany
     {
         return $this->hasMany(Product::class);
