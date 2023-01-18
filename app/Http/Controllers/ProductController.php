@@ -16,6 +16,7 @@ class ProductController extends Controller
     public function index()
     {
         //aggiungo il return per la view in previsione per sviluppi futuri
+        return view('admin.products.index');
     }
 
     /**
