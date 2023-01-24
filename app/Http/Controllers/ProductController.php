@@ -12,6 +12,7 @@ use App\Models\Product;
 //banane
 //MAC<3
 //lamponi
+// capre
 class ProductController extends Controller
 {
     /**
