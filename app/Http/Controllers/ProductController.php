@@ -8,6 +8,7 @@ use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
 // prova
+
 class ProductController extends Controller
 {
     /**
