@@ -7,14 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
-// ravanello
-// prova conflitto
-//banane
-//MAC<3
-//lamponi
-// capre
-//BASTAAAAAA
-// gesupikachu
+//ciao
 class ProductController extends Controller
 {
     /**
