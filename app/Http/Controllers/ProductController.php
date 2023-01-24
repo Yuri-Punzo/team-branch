@@ -8,7 +8,7 @@ use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
 //banane
-//ciliegie
+//MAC<3
 //lamponi
 class ProductController extends Controller
 {
