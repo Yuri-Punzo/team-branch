@@ -13,6 +13,7 @@ use App\Models\Product;
 //MAC<3
 //lamponi
 // capre
+//BASTAAAAAA
 class ProductController extends Controller
 {
     /**
