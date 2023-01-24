@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+//aggiungere modello technologies
 use App\Models\Type;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
