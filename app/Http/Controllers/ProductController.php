@@ -10,7 +10,7 @@ use App\Models\Product;
 // ravanello
 // prova conflitto
 //banane
-//ciliegie
+//MAC<3
 //lamponi
 class ProductController extends Controller
 {
